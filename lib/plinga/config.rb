@@ -43,13 +43,5 @@ module Plinga
     def callback_url(protocol)
       protocol + callback_domain
     end
-
-    def request_validator
-      Plinga::RequestValidator.new(app_secret)
-    end
-
-    def payment_validator
-      Plinga::PaymentValidator.new(app_secret)
-    end
   end
 end

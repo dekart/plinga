@@ -42,9 +42,11 @@ module Plinga
         result = Plinga::User.get_uid(user_id)
 
         unless result
-          Redis.current.hset('users_relations', user_id, Redis.current.hlen('users_relations').to_i + 1)
+          Redis.current.setnx('users_relations_index', 0)
 
-          result = Redis.current.hget('users_relations', user_id)
+          result = Redis.current.incr('users_relations_index')
+
+          Redis.current.hset('users_relations', user_id, result)
         end
 
         result
