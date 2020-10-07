@@ -17,7 +17,7 @@ module Plinga
             </script>
           JAVASCRIPT
 
-          js
+          js.html_safe
         end
       end
     end
