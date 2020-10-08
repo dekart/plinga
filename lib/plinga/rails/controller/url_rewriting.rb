@@ -8,7 +8,7 @@ module Plinga
 
         def self.included(base)
           base.class_eval do
-            helper_method(:exe_canvas_page_url, :exe_callback_url)
+            helper_method(:plinga_canvas_page_url, :plinga_callback_url)
           end
         end
 
