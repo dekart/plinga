@@ -58,6 +58,7 @@ GEM
     rchardet (1.8.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    redis (3.3.5)
     semver (1.0.1)
     shoulda (4.0.0)
       shoulda-context (~> 2.0)
@@ -81,6 +82,7 @@ DEPENDENCIES
   bundler (~> 1.0)
   juwelier (~> 2.1.0)
   rdoc (~> 3.12)
+  redis (~> 3.3.5)
   shoulda
   simplecov
 

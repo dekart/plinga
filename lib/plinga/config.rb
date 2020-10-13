@@ -36,7 +36,7 @@ module Plinga
 
     # URL of the application canvas page
     def canvas_page_url(protocol)
-      "#{ protocol }play-staging.plinga.de/game/demo/69/"
+      "#{ protocol }play-staging.plinga.de/game/demo/#{ app_id }/"
     end
 
     # Application callback URL
